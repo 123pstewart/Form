@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Recreation</title>
+    <style>
+      body {
+        margin: 50px;
+        background-color: whitesmoke;
+        allign: center;
+      }
+      table * {
+        width: 200px;
+        height: 35px;
+        margin-left: 15px;
+        background-color: white;
+      }
+      table {
+        border-collapse: collapse;
+        font-size: 18px;
+        border-radius: 15px;
+      }
+    </style>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://owwya.com/wp-content/uploads/2020/07/Genshin-Impact-Venti-Icon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+      style="font-family: Oswald;"
+    />
+  </head>
+  <body>
+    <h2>Confirm order and pay</h2>
+    <p style="font-family: Verdana;">
+      Please make the payment, after that you can enjoy all the features and
+      benefits.
+    </p>
+    <form>
+      <table>
+        <tr>
+          <th colspan="3" style="font: Verdana; text-align: left;">
+            Payment Details
+          </th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label style="color: gray;" for="name">Name on card</label>
+            <br />
+            <input type="text" placeholder="Full Name" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label style="color: gray;" for="cardNumber">Card number</label>
+            <br />
+            <input type="text" placeholder="Card number" />
+          </td>
+          <td>
+            <label style="color: gray;" for="expiration">Expiry</label>
+            <br />
+            <input type="text" placeholder="Expiry" />
+          </td>
+          <td>
+            <label rowspan="3" style="color: gray;" for="cvv">CVV</label>
+            <br />
+            <input type="text" placeholder="CVV" />
+          </td>
+        </tr>
+        <tr>
+          <th colspan="3" style="font: Verdana; text-align: left;">
+            Billing Address
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <label colspan="3" style="color: gray;" for="address"
+              >Street address</label
+            >
+            <br />
+            <input colspan="3" type="text" placeholder="Street address" />
+          </td>
+          <td colspan="2">
+            <label style="color: gray;" for="city">City</label>
+            <br />
+            <input type="text" placeholder="City" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label style="color: gray;" for="state">State / Province</label>
+            <br />
+            <input list="states" name="state" />
+            <datalist id="states">
+              <option value="New Jersey"> </option>
+              <option value="New York"> </option>
+              <option value="Connecticut"> </option>
+              <option value="Opera"> </option>
+              <option value="Safari"> </option>
+              <option value="mondstadt"> </option>
+              <option value="Liyue"> </option>
+              <option value="Other..."> </option>
+            </datalist>
+          </td>
+          <td colspan="2">
+            <label style="color: gray;" for="Zipcode">Zip code</label>
+            <br />
+            <input type="text" placeholder="Zip code" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <input
+      style="
+        color: white;
+        background-color: indigo;
+        border-radius: 0px;
+        height: 55px;
+        width: 110px;
+        margin-left: 335px;
+        margin-top: 100px;
+      "
+      type="submit"
+      value="Pay $840"
+    />
+  </body>
+</html>
